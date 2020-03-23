@@ -1,0 +1,8 @@
+note over selain:
+Selaimen javascript-koodi lisää heti sivulle käyttäjän uuden muistiinpanon
+ja tämän jälkeen lähettää viestin myös palvelimelle POST-kutsulla.
+
+Sivua ei ladata uudestaan
+end note
+selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/spa
+palvelin->selain: status:201 {"message":"note created"}
