@@ -6,7 +6,7 @@ const Persons = props => {
       {props.personList.filter(props.filterFunction).map((person, i) => {
         return (
           <li key={person.name}>
-            {person.name} {person.number}
+            {person.name} {person.number} <button onClick={() => props.deleteHandler(person.id)}>Delete</button>
           </li>
         );
       })}
